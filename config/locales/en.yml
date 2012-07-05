@@ -25,7 +25,7 @@ en:
       title_label: Location Name
       description_label: Description...
       submitter_name_label: 'Your Name'
-      submit: 'Submit Location'
+      submit: 'Submit suggestion'
     purpose: 'This location is a %{type}.'
     submitted_by: 'added this point %{in_region}'
     when: 'on %{date} at %{time}'
@@ -46,7 +46,7 @@ en:
     comment:
       action: 'commented on'
     point:
-      action: added a point
+      action: 'suggested a station'
       in_region: "in %{region}"
       by_name: "%{name}'s point"
   # Model names and model attribute names
