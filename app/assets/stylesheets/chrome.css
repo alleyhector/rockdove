@@ -17,7 +17,7 @@ input[type=button],
 input[type=submit],
 button {
   display: block;
-  background-color: #00aaff;
+  background-color: #00aeef;
   border: 0;
   margin: 0 0 0.667em;
   padding: 0 1em;
@@ -90,34 +90,33 @@ table.regions {
  *
  */
 #header {
-  color: #fff;
-  background: #808080 url(header-gradient.png) 0 0 repeat-x scroll;
+  background: #fff url(circle-c-crop.png) 0 0 no-repeat scroll;
      -moz-box-shadow: 0 4px 0 rgba(85, 85, 85, 0.5);
   -webkit-box-shadow: 0 4px 0 rgba(85, 85, 85, 0.5);
           box-shadow: 0 4px 0 rgba(85, 85, 85, 0.5);
 }
 #pages a {
-  color: #A3C7D9;
-  text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.3);
+  color: #668fb0;
   font-weight: bold;
   text-decoration: none;
 }
 #pages a:hover {
-  color: #fff;
+  color: #00457c;
 }
 #site-title {
   float: left;
+  margin-left: 145px;
 }
 #site-title a {
-  color: #eee;
-  text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.5);
-  font-family: 'Dancing Script', cursive;
+  color: #00457c;
+  text-shadow: -1px 1px 0 rgba(255, 255, 255, 0.5);
   text-decoration: none;
+  font-weight: normal;
   margin-right: 0.5em;
   line-height: 1.5;
 }
 #site-title a:hover {
-  color: #fff;
+  color: #003763;
 }
 #header .meta-separator {
   color: #777;
@@ -557,7 +556,7 @@ a.reply-link:hover {
   right: 0;
   top: 0;
   z-index: 10000;
-  background-color: #666666;
+  background-color: #668fb0;
   overflow: auto;
 }
 #ticker ul {
@@ -565,7 +564,7 @@ a.reply-link:hover {
   margin: 0;
 }
 #ticker ul a {
-  color: #ddd;
+  color: #eee;
   text-decoration: none;
   display: block;
   padding: 10px 10px 10px 45px;
@@ -578,13 +577,13 @@ a.reply-link:hover {
 #ticker li {
   padding: 0;
   min-height: 25px;
-  border-bottom: 3px solid #5d5d5d;
+  border-bottom: 3px solid #4c7ca3;
   font-size: 0.8em;
   margin-bottom: 0;
   position: relative;
 }
 #ticker li:hover {
-  background-color: #626262;
+  background-color: #00457c;
 }
 #ticker li.loading > div {
   margin : 1em auto;
