@@ -94,6 +94,7 @@ table.regions {
      -moz-box-shadow: 0 4px 0 rgba(85, 85, 85, 0.5);
   -webkit-box-shadow: 0 4px 0 rgba(85, 85, 85, 0.5);
           box-shadow: 0 4px 0 rgba(85, 85, 85, 0.5);
+  overflow: hidden;
 }
 #pages a {
   color: #668fb0;
@@ -106,6 +107,8 @@ table.regions {
 #site-title {
   float: left;
   margin-left: 145px;
+  font-size: 2.5em;
+  line-height: 2.25;
 }
 #site-title a {
   color: #00457c;
