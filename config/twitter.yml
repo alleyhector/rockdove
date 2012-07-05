@@ -1,0 +1,9 @@
+development:
+  consumer_key: Cb1YnTMwP0o9UBmY99CLQQ
+  consumer_secret: tvKSnDooHs6lGGLkVq9jir2AQ8tyvdTg2TFTN82DMok
+test:
+  consumer_key: Cb1YnTMwP0o9UBmY99CLQQ
+  consumer_secret: tvKSnDooHs6lGGLkVq9jir2AQ8tyvdTg2TFTN82DMok
+production:
+  consumer_key: Cb1YnTMwP0o9UBmY99CLQQ
+  consumer_secret: tvKSnDooHs6lGGLkVq9jir2AQ8tyvdTg2TFTN82DMok
