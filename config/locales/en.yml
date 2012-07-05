@@ -2,12 +2,12 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  app_name: Shareabouts
+  app_name: Cincinnati Bike Share
   map_controls:
-    locate_feature: 'Add a location!'
+    locate_feature: 'Suggest a location!'
     finalize_feature: 'Confirm Location'
     drag_hint: 'Drag me\! Then click confirm.'
-    drag_hint_long: 'Drag your location to the center of the map'
+    drag_hint_long: 'Drag your suggestion to the center of the map'
   auth:
     fb_signin: 'Sign in with Facebook'
     twitter_signin: 'Sign in with Twitter'
@@ -17,9 +17,9 @@ en:
     my_supports: 'Supported'
   feature:
     notice:
-      point_added: 'Thank you! Your point was added to the map. Please, share it with your friends.'
+      point_added: 'Thank you! Your suggestion was added to the map. Share it with your friends.'
       invalid: 'There are some errors with your point.'
-      out_of_bounds: "Point doesn't fall within the defined regions"
+      out_of_bounds: "Suggest a location within the study area."
     form:
       header: 'Tell us more...'
       title_label: Location Name
