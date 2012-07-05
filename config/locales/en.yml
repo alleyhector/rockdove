@@ -23,7 +23,7 @@ en:
     form:
       header: 'Tell us more...'
       title_label: Location Name
-      description_label: Description...
+      description_label: Tell us why this is a good station location...
       submitter_name_label: 'Your Name'
       submit: 'Submit suggestion'
     purpose: 'This location is a %{type}.'
