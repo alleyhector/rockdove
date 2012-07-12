@@ -23,6 +23,10 @@
     </fieldset>
     <% end %>
     <fieldset>
+      <div>
+        <%= form.label :name, t("feature.form.title_label") %>
+        <%= form.text_field :name, :placeholder => t("feature.form.title_label") %>
+      </div>
       <% if LocationType.any? %>
         <div>
           <%= form.fields_for :feature_location_type, @feature_point.build_feature_location_type do |fields| %>
