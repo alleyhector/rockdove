@@ -67,6 +67,8 @@ var Shareabouts = Shareabouts || {};
           addFeature.reset();
         },
         onload : function() {
+          var map = Map.shareabout('getMap');
+
           // See views/feature_points/index.html.erb
           if (window.shareabouts && window.shareabouts.initialFeatureId) {
             $(S).trigger('viewFeature', [window.shareabouts.initialFeatureId]);
@@ -81,6 +83,58 @@ var Shareabouts = Shareabouts || {};
               }
             });
           }
+
+          $.getJSON('/assets/blos.json', function(data){
+            var blosLayer = new L.GeoJSON(),
+                colors = {
+                  'B': '#38a700',
+                  'C': '#8bd100',
+                  'D': '#f9f92e',
+                  'E': '#ff7f00',
+                  'F': '#fe0000'
+                },
+                style = {
+                  weight: 3,
+                  opacity: 1,
+                  clickable: false
+                };
+
+            blosLayer.on('featureparse', function(evt){
+              style.color = colors[evt.properties['NCMIN_Da_1']] || '#ff0000';
+              evt.layer.setStyle(style);
+            });
+
+            blosLayer.addGeoJSON(data);
+            map.addLayer(blosLayer);
+          });
+
+          $.getJSON('/assets/routes.json', function(data){
+            var routesLayer = new L.GeoJSON(),
+                colors = {
+                  'NC 2 - Mountains to Sea': '#ca38c9',
+                  'NC 3 - Ports of Call': '#2895bc',
+                  'NC 4 - North Line Trace': '#37c741',
+                  'NC 5 - Cape Fear Run': '#2db68c',
+                  'NC 6 - Piedmont Spur': '#bdc436',
+                  'NC 7 - Ocracoke Option': '#619c2e',
+                  'NC 8 - Southern Highlands': '#a82364',
+                  'Sandhills Sector': '#4626b5',
+                  'US 1 - Carolina Connection': '#a86437'
+                },
+                style = {
+                  weight: 3,
+                  opacity: 1,
+                  clickable: false
+                };
+
+            routesLayer.on('featureparse', function(evt){
+              style.color = colors[evt.properties['RTE_NAME1']];
+              evt.layer.setStyle(style);
+            });
+
+            routesLayer.addGeoJSON(data);
+            map.addLayer(routesLayer);
+          });
         },
         onpopup : function() {
           addFeature.hide();
