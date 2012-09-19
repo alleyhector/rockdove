@@ -2,7 +2,7 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  app_name: North Carolina State Bike Route Suggestions
+  app_name: North Carolina State Bike Route Input Map
   map_controls:
     locate_feature: 'Suggest a location!'
     finalize_feature: 'Confirm Location'
