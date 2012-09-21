@@ -84,30 +84,7 @@ var Shareabouts = Shareabouts || {};
             });
           }
 
-          $.getJSON('/assets/blos.json', function(data){
-            var blosLayer = new L.GeoJSON(),
-                colors = {
-                  'B': '#38a700',
-                  'C': '#8bd100',
-                  'D': '#f9f92e',
-                  'E': '#ff7f00',
-                  'F': '#fe0000'
-                },
-                style = {
-                  weight: 3,
-                  opacity: 1,
-                  clickable: false
-                };
-
-            blosLayer.on('featureparse', function(evt){
-              style.color = colors[evt.properties['NCMIN_Da_1']] || '#ff0000';
-              evt.layer.setStyle(style);
-            });
-
-            blosLayer.addGeoJSON(data);
-            map.addLayer(blosLayer);
-          });
-
+          // Add routes
           $.getJSON('/assets/routes.json', function(data){
             var routesLayer = new L.GeoJSON(),
                 colors = {
