@@ -7,6 +7,14 @@
   background-color: #fff;
 }
 
+a:link, a:visited {
+  color: #f15c22;
+}
+
+a:hover {
+  color: #f8971d;
+}
+
 /* Forms, Inputs, & Buttons */
 label {
   color: #888;
@@ -17,7 +25,7 @@ input[type=button],
 input[type=submit],
 button {
   display: block;
-  background-color: #00aeef;
+  background-color: #f8971d;
   border: 0;
   margin: 0 0 0.667em;
   padding: 0 1em;
@@ -29,14 +37,15 @@ button {
   white-space: nowrap;
   line-height: 2.25em;
   height: 2.25em;
-  text-shadow: 1px -1px 0 #0066aa;
-     -moz-box-shadow: -4px 4px 0 rgba(0, 102, 170, 0.75);
-  -webkit-box-shadow: -4px 4px 0 rgba(0, 102, 170, 0.75);
-          box-shadow: -4px 4px 0 rgba(0, 102, 170, 0.75);
+  text-shadow: 1px -1px 0 #f15c22;
+     -moz-box-shadow: -4px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: -4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: -4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 input[type=button]:hover,
 input[type=submit]:hover,
 button:hover {
+  background-color: #f15c22;
   color: #fff;
 }
 input[type=button]:active,
@@ -97,12 +106,12 @@ table.regions {
   overflow: hidden;
 }
 #pages a {
-  color: #668fb0;
+  color: #f15c22;
   font-weight: bold;
   text-decoration: none;
 }
 #pages a:hover {
-  color: #00457c;
+  color: #f8971d;
 }
 #site-title {
   float: left;
@@ -116,6 +125,7 @@ table.regions {
   width: 190px;
   height: 60px;
   margin-top: 10px;
+  margin-right: 20px;
 }
 #site-title a:hover {
   color: #003763;
@@ -330,8 +340,8 @@ table.regions {
   border-bottom: 1px solid #ddd;
 }
 a.reply-link {
-  background: #A3C7D9;
-  color: #fff;
+  background-color: #f1f0e9;
+  color: #f8971d;
   font-size: 0.75em;
   text-transform: uppercase;
   text-decoration: none;
@@ -342,7 +352,8 @@ a.reply-link {
   right: 0;
 }
 a.reply-link:hover {
-  background: #00aaff;
+  color: white;
+  background-color: #f8971d;
 }
 .discussion ul {
   margin-left: 0;
@@ -559,7 +570,7 @@ a.reply-link:hover {
   right: 0;
   top: 0;
   z-index: 10000;
-  background-color: #668fb0;
+  background: url(walk-bike-nc-wallpaper.jpg) 0 0 repeat scroll;
   overflow: auto;
 }
 #ticker ul {
@@ -567,7 +578,7 @@ a.reply-link:hover {
   margin: 0;
 }
 #ticker ul a {
-  color: #eee;
+  color: #999;
   text-decoration: none;
   display: block;
   padding: 10px 10px 10px 45px;
@@ -575,18 +586,18 @@ a.reply-link:hover {
   z-index: 10;
 }
 #ticker ul a:hover {
-  color: #fff;
+  color: #666;
 }
 #ticker li {
   padding: 0;
   min-height: 25px;
-  border-bottom: 3px solid #4c7ca3;
+  border-bottom: 3px solid #d6d1be;
   font-size: 0.8em;
   margin-bottom: 0;
   position: relative;
 }
 #ticker li:hover {
-  background-color: #00457c;
+  background-color: #fff5e5;
 }
 #ticker li.loading > div {
   margin : 1em auto;
