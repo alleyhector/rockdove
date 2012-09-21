@@ -90,7 +90,7 @@ table.regions {
  *
  */
 #header {
-  background: #fff url(circle-c-crop.png) 0 0 no-repeat scroll;
+  background: #fff url(walk-bike-nc-logo.gif) 1em center no-repeat scroll;
      -moz-box-shadow: 0 4px 0 rgba(85, 85, 85, 0.5);
   -webkit-box-shadow: 0 4px 0 rgba(85, 85, 85, 0.5);
           box-shadow: 0 4px 0 rgba(85, 85, 85, 0.5);
@@ -106,17 +106,16 @@ table.regions {
 }
 #site-title {
   float: left;
-  margin-left: 145px;
   font-size: 2.5em;
   line-height: 2.25;
 }
 #site-title a {
-  color: #00457c;
-  text-shadow: -1px 1px 0 rgba(255, 255, 255, 0.5);
-  text-decoration: none;
-  font-weight: normal;
-  margin-right: 0.5em;
-  line-height: 1.5;
+  /* Hiding, but still clickable where the logo is */
+  text-indent: -9999px;
+  display: block;
+  width: 190px;
+  height: 60px;
+  margin-top: 10px;
 }
 #site-title a:hover {
   color: #003763;
