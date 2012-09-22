@@ -4,7 +4,7 @@
 en:
   app_name: North Carolina State Bike Route Input Map
   map_controls:
-    locate_feature: 'Suggest a location!'
+    locate_feature: 'Add feedback'
     finalize_feature: 'Confirm Location'
     drag_hint: 'Drag me\! Then click confirm.'
     drag_hint_long: 'Drag your suggestion to the center of the map'
@@ -17,15 +17,15 @@ en:
     my_supports: 'Supported'
   feature:
     notice:
-      point_added: 'Thank you! Your suggestion was added to the map. Share it with your friends.'
+      point_added: 'Thank you! Your feedback was added to the map.'
       invalid: 'There are some errors with your point.'
       out_of_bounds: "Suggest a location within the study area."
     form:
-      header: 'Tell us more...'
-      title_label: Location Name
-      description_label: Tell us why this is a good station location...
+      header: 'Your feedback'
+      title_label: 'Road name/location'
+      description_label: 'Description, including the extent of your suggestion and reason for it.'
       submitter_name_label: 'Your Name'
-      submit: 'Submit suggestion'
+      submit: 'Submit feedback'
     purpose: 'This location is a %{type}.'
     submitted_by: 'added this point %{in_region}'
     when: 'on %{date} at %{time}'
@@ -42,17 +42,17 @@ en:
         status: 'Check out this %{thing}! %{url}.'
   activity:
     vote:
-      action: supported
+      action: 'agreed with'
     comment:
       action: 'commented on'
     point:
-      action: 'suggested a station'
+      action: 'gave feedback'
       in_region: "in %{region}"
-      by_name: "%{name}'s point"
+      by_name: "%{name}'s feedback"
   # Model names and model attribute names
   activerecord:
     models:
-      feature_point: point
+      feature_point: 'feedback location'
       user: someone
     attributes:
       feature_point:
